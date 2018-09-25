@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PBJ Demo</title>
+	<meta property="og:url"                content="" />
+	<meta property="fb:app_id"             content="" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="" />
+	<meta property="og:description"        content="" />
+	<meta property="og:image"              content="" />
+	<meta property="og:image:width" content="1280"/>
+	<meta property="og:image:height" content="720"/>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<link href="css/styles.css" rel="stylesheet">
+	<script type="text/javascript" src="//www.youtube.com/iframe_api"></script>
+	<script src="js/lib/jquery-2.1.1.min.js"></script>
+	<script src="js/lib/detectmobilebrowser.js"></script>
+	<script src="js/lib/modernizr-custom.js"></script>
+	<script src="js/lib/TweenMax.min.js"></script>
+	<script src="js/lib/EasePack.min.js"></script>
+	<script src="js/YTPlayer.js"></script>
+	<script src="js/lib/howler.min.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+
+	<div id="PBJ__content">
+		<div class='PBJ__videoWrapper'>
+			<video class='PBJ__videoPlayer PBJ__videoPlayer--1' muted playsinline preload='auto' poster='' width='3840' height='2160'>
+				<source src='' type='video/mp4' />
+			</video>
+		</div>
+
+		<div class="PBJ__overlay">
+			<div class="PBJ__loader">
+				<div class="txt title bold">PETER, BJORN AND JOHN</div>
+				<div class="txt bold small">NEW ALBUM</div>
+				<div class="txt big bold">DARKER DAYS</div>
+				<div class="txt bold small">OUT IN APRIL</div>
+			</div>
+
+			<div class="PBJ__intro">
+				<div class="step PBJ__intro--intro">
+					<div class="txt big bold">NOW WATCH<br/>3 NEW SINGLES<br/>IN 1 GO</div>
+				</div>
+
+				<div class="step PBJ__intro--instructionsDesktop">
+					<div class="txt bold small title">CHOOSE SONG WITH YOUR KEYBOARD</div>
+					<div class="txt bold left">P <span class="small">FOR</span> PETER - ONE FOR THE TEAM</div>
+					<div class="txt bold left">B <span class="small">FOR</span> BJORN - GUT FEELING</div>
+					<div class="txt bold left">J <span class="small">FOR</span> JOHN - EVERY OTHER NIGHT</div>
+				</div>
+
+				<div class="step PBJ__intro--instructionsMobile">
+					<div class="txt bold small title">SWIPE LEFT/RIGHT TO WATCH</div>
+					<div class="txt bold left">PETER - ONE FOR THE TEAM</div>
+					<div class="txt bold left">BJORN - GUT FEELING</div>
+					<div class="txt bold left">JOHN - EVERY OTHER NIGHT</div>
+				</div>
+
+				<div class="step PBJ__intro--cta">
+					<div class="txt bold super blink">TRY IT NOW</div>
+				</div>
+			</div>
+			
+			<ul class="PBJ__menu">
+				<li class="txt bold peter">PETER</li>
+				<li class="txt bold bjorn">BJORN</li>
+				<li class="txt bold john">JOHN</li>
+				<li class="txt bold all">ALL</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+	$(function() {
+		window.app = new PBJ();
+		window.app.init();
+	});
+
+</script>
+</body>
+</html>
+
