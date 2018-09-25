@@ -11,7 +11,7 @@ Run index.html in any browser
 
 
 ## TODO
-* Change video quality based on mobile/desktop
+* Change video quality based on mobile/desktop (if not YT hosted)
 * Choose prefered video hosting and player type
 * Mute sound?
 * Video end screen?
