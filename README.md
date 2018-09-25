@@ -5,7 +5,7 @@ No prerequisities, only pure HTML5/js/CSS
 
 ## Running and tests
 Run index.html in any browser
-* In main.js set `window.ASSET_URL` to video asset path
+* In main.js set `window.ASSET_URL` to video/sound asset path
 * Set query var `q=h` for high quality video
 * Set query var `player=yt` for Youtube Playback, NOTE: needs additional `id={youtubeID}` parameter
 
