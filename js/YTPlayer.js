@@ -59,13 +59,11 @@ p.onYTPlayerStateChange = function(event){
     if(this.onReadyBind)this.onReadyBind();
     this.onReadyBind = null;
     this.videoIsReady = true;
+    this.play();
     $(this).trigger('play');
-
   		}else if(event.data === 2){//paused
-
         this.isPlaying = false;
         $(this).trigger('pause');
-
 			}else if(event.data === 3){//buffering
 				this.isPlaying = true;
         $(this).trigger('waiting');

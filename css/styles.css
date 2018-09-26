@@ -106,6 +106,7 @@ body, html{
     width: 200%;
     height: calc(200% + 100px);
     transform-origin: 0 0;
+    border: none;
 }
 
 .PBJ__overlay{

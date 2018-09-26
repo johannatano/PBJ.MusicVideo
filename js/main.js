@@ -320,10 +320,10 @@ p.onSoundFilesComplete = function(){
 
 p.loadVideo = function(){
 
-	this.player_type = getParameterByName('player');
+	this.player_type = "yt";//getParameterByName('player');
 
 	if(this.player_type == "yt"){
-		var videoID = getParameterByName("id");
+		var videoID = "Vhqn1-pds5w";//getParameterByName("id");
 		this.player = new YTPlayer(videoID);
 		this.$player = $(this.player);
 		this.player.createPlayer(this.videoWrapper, this.onVideoLoaded.bind(this));
